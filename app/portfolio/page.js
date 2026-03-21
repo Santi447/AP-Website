@@ -57,10 +57,10 @@ export default function Portfolio() {
                   <h3 className="text-4xl font-headline font-black text-white mb-4">Large-Scale Industrial Foundation</h3>
                   <p className="max-w-md text-surface-container-high opacity-80 mb-6">A multi-phase concrete pour requiring specialized pumping for a 120,000 sq ft logistics hub.</p>
                   <div className="flex items-center gap-4">
-                    <span className="flex items-center gap-1 font-headline font-bold text-sm bg-primary/20 backdrop-blur-md px-4 py-2 rounded-lg">
+                    <span className="text-white flex items-center gap-1 font-headline font-bold text-sm bg-primary/20 backdrop-blur-md px-4 py-2 rounded-lg">
                       <span className="material-symbols-outlined text-sm">schedule</span> 2023
                     </span>
-                    <span className="flex items-center gap-1 font-headline font-bold text-sm bg-primary/20 backdrop-blur-md px-4 py-2 rounded-lg">
+                    <span className="text-white flex items-center gap-1 font-headline font-bold text-sm bg-primary/20 backdrop-blur-md px-4 py-2 rounded-lg">
                       <span className="material-symbols-outlined text-sm" data-weight="fill">location_on</span> Calgary
                     </span>
                   </div>
@@ -119,7 +119,7 @@ export default function Portfolio() {
         </section>
 
         {/* Builder Highlights */}
-        <section className="bg-surface py-24 structural-grain">
+        <section className="bg-secondary-container py-24">
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div>
@@ -132,20 +132,20 @@ export default function Portfolio() {
                 <span className="material-symbols-outlined text-primary">verified</span>
               </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-xl">
-              <div className="bg-[#d8f2ff] p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-[#cbe7f5] transition-colors">
+            <div className="bg-white grid grid-cols-2 md:grid-cols-4 gap-4 rounded-xl">
+              <div className="p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">domain</span>
                 <span className="font-headline font-bold text-on-surface tracking-tight text-center">Vanguard Builders</span>
               </div>
-              <div className="bg-[#d8f2ff] p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-[#cbe7f5] transition-colors">
+              <div className="p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">architecture</span>
                 <span className="font-headline font-bold text-on-surface tracking-tight text-center">Prairie Structures</span>
               </div>
-              <div className="bg-[#d8f2ff] p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-[#cbe7f5] transition-colors">
+              <div className="p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">construction</span>
                 <span className="font-headline font-bold text-on-surface tracking-tight text-center">Summit Group</span>
               </div>
-              <div className="bg-[#d8f2ff] p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-[#cbe7f5] transition-colors">
+              <div className="p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">engineering</span>
                 <span className="font-headline font-bold text-on-surface tracking-tight text-center">Apex Contractors</span>
               </div>
