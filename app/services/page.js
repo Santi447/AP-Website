@@ -139,10 +139,10 @@ export default function Services() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-inverse-surface py-24 relative overflow-hidden">
+        <section className="bg-[#021f29] py-24 relative overflow-hidden">
           <div className="absolute inset-0 structural-grain"></div>
           <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-            <h2 className="font-headline text-5xl md:text-6xl font-black text-inverse-on-surface mb-8 tracking-tight">READY TO POUR?</h2>
+            <h2 className="font-headline text-5xl md:text-6xl font-black text-white mb-8 tracking-tight">READY TO POUR?</h2>
             <p className="text-surface-container-high text-xl mb-12 max-w-2xl mx-auto">
               Whether it's a multi-unit development or a custom home project, A&P Construction delivers the structural backbone you need.
             </p>
