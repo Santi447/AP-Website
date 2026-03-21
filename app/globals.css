@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f3faff;
+  --foreground: #021f29;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-work-sans);
+  --font-display: var(--font-space-grotesk);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Custom Palette from Design System */
+  --color-primary: #a43700;
+  --color-primary-container: #cd4700;
+  --color-primary-fixed: #ffdbcf;
+  --color-primary-fixed-dim: #ffb59a;
+
+  --color-secondary: #4c616c;
+  --color-secondary-container: #cfe6f2;
+  --color-secondary-fixed: #cfe6f2;
+  --color-secondary-fixed-dim: #b4cad6;
+  
+  --color-surface: #f3faff;
+  --color-surface-bright: #f3faff;
+  --color-surface-container: #d8f2ff;
+  --color-surface-container-high: #d1ecfa;
+  --color-surface-container-highest: #cbe7f5;
+  --color-surface-container-low: #e6f6ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-dim: #c3deec;
+  --color-surface-variant: #cbe7f5;
+  
+  --color-outline: #8f7066;
+  --color-outline-variant: #e3bfb2;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.concrete-texture, .structural-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+}
+
+.structural-grain-before::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIN59cGdm3pJncMVHI5ZnxNoE5mwErYc29Ff8LCtVz7LmlAd4M7sBSuOQ7obCoJ4iJt9E1tdAGR9MroslQzmBvjqiaDBgc4opSYDiBWt6iWUK2W_WurkD9togHVYWrBOEhLzlL3EB6AlahJ5RAXkTPOcrgCCPRQRstAfqPCn1Fgdw3kyePxLX1T_DS4qp16ve7RNMRzehhtnX-825jEerG-B02FSjC5trpI5r64NDw1s2DGQQSx2m0pYmOxZDtO6RWOJ-xK048mdTq");
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.grain-overlay {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxrxWGqe4zESR2lXqIT3jFui5d7JtdUrxYwsWQnpZ3Mcsi0NOJpcGXV8i4jlqWjNttifGpC_8NeGQnxJdff-QNSlsU_dCZ9rcia5cTOQhVfnrLzKwsFwpKhWZ-hc_tg6PfiKgCpC3iGn0-WH2OeLmbX5KRBTZsowfPW6GiWJUGgOmy_GniugnrQn8u1fREiVeZVSXjw9vrRQ4aaYM9502MS71jove3wdoJUNMsBf_TX0TfrM8txi9pxYFX77RFUtQkNUvJ8aN6DLZi");
+  opacity: 0.05;
+  pointer-events: none;
 }
