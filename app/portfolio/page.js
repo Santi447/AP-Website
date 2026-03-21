@@ -54,7 +54,7 @@ export default function Portfolio() {
                 <div className="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-10 text-on-tertiary-container">
                   <span className="text-primary-fixed font-label text-xs uppercase tracking-widest mb-4 block">Commercial Foundation</span>
-                  <h3 className="text-4xl font-headline font-black mb-4">Large-Scale Industrial Foundation</h3>
+                  <h3 className="text-4xl font-headline font-black text-white mb-4">Large-Scale Industrial Foundation</h3>
                   <p className="max-w-md text-surface-container-high opacity-80 mb-6">A multi-phase concrete pour requiring specialized pumping for a 120,000 sq ft logistics hub.</p>
                   <div className="flex items-center gap-4">
                     <span className="flex items-center gap-1 font-headline font-bold text-sm bg-primary/20 backdrop-blur-md px-4 py-2 rounded-lg">
@@ -75,7 +75,7 @@ export default function Portfolio() {
                 <div className="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8 text-on-tertiary-container">
                   <span className="text-primary-fixed font-label text-xs uppercase tracking-widest mb-3 block">Concrete Pumping</span>
-                  <h3 className="text-2xl font-headline font-black mb-3">High-Rise Pumping Project</h3>
+                  <h3 className="text-2xl font-headline font-black text-white mb-3">High-Rise Pumping Project</h3>
                   <p className="text-sm text-surface-container-high opacity-80 mb-4">Precision vertical pumping for a 32-story residential tower in Downtown Edmonton.</p>
                   <span className="text-primary font-headline font-bold uppercase text-xs tracking-widest group-hover:underline underline-offset-4 decoration-2">View Case Study</span>
                 </div>
@@ -89,7 +89,7 @@ export default function Portfolio() {
                 <div className="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8 text-on-tertiary-container">
                   <span className="text-primary-fixed font-label text-xs uppercase tracking-widest mb-3 block">Residential</span>
-                  <h3 className="text-2xl font-headline font-black mb-3">Custom Residential Patio</h3>
+                  <h3 className="text-2xl font-headline font-black text-white mb-3">Custom Residential Patio</h3>
                   <p className="text-sm text-surface-container-high opacity-80">Stamped and polished concrete living space for an estate home in Bearspaw.</p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function Portfolio() {
                 <div className="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8 text-on-tertiary-container">
                   <span className="text-primary-fixed font-label text-xs uppercase tracking-widest mb-3 block">Public Infrastructure</span>
-                  <h3 className="text-2xl font-headline font-black mb-2">Bridge Abutment Pour</h3>
+                  <h3 className="text-2xl font-headline font-black text-white mb-2">Bridge Abutment Pour</h3>
                   <p className="text-sm text-surface-container-high opacity-80">Reinforced concrete supports for the Highway 2 expansion project.</p>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export default function Portfolio() {
         </section>
 
         {/* Builder Highlights */}
-        <section className="bg-surface-container-low py-24 structural-grain">
+        <section className="bg-surface py-24 structural-grain">
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
               <div>
@@ -127,27 +127,27 @@ export default function Portfolio() {
                 <p className="text-secondary max-w-xl text-lg font-medium">We collaborate with the province's leading general contractors and residential developers to deliver unparalleled structural integrity.</p>
               </div>
               <div className="hidden md:block h-px flex-1 bg-outline-variant/30 mx-12 mb-6"></div>
-              <div className="flex items-center gap-2 text-primary">
-                <span className="font-headline font-bold">Partnerships</span>
-                <span className="material-symbols-outlined">verified</span>
+              <div className="flex items-center gap-2">
+                <span className="font-headline font-bold text-primary">Partnerships</span>
+                <span className="material-symbols-outlined text-primary">verified</span>
               </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-outline-variant/20 rounded-xl overflow-hidden shadow-sm">
-              <div className="bg-surface-container-lowest p-12 flex flex-col items-center justify-center text-secondary/40 group hover:bg-surface transition-colors">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-xl">
+              <div className="bg-[#d8f2ff] p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-[#cbe7f5] transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">domain</span>
-                <span className="font-headline font-bold text-on-surface/60 group-hover:text-primary tracking-tight">Vanguard Builders</span>
+                <span className="font-headline font-bold text-on-surface tracking-tight text-center">Vanguard Builders</span>
               </div>
-              <div className="bg-surface-container-lowest p-12 flex flex-col items-center justify-center text-secondary/40 group hover:bg-surface transition-colors">
+              <div className="bg-[#d8f2ff] p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-[#cbe7f5] transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">architecture</span>
-                <span className="font-headline font-bold text-on-surface/60 group-hover:text-primary tracking-tight">Prairie Structures</span>
+                <span className="font-headline font-bold text-on-surface tracking-tight text-center">Prairie Structures</span>
               </div>
-              <div className="bg-surface-container-lowest p-12 flex flex-col items-center justify-center text-secondary/40 group hover:bg-surface transition-colors">
+              <div className="bg-[#d8f2ff] p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-[#cbe7f5] transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">construction</span>
-                <span className="font-headline font-bold text-on-surface/60 group-hover:text-primary tracking-tight">Summit Group</span>
+                <span className="font-headline font-bold text-on-surface tracking-tight text-center">Summit Group</span>
               </div>
-              <div className="bg-surface-container-lowest p-12 flex flex-col items-center justify-center text-secondary/40 group hover:bg-surface transition-colors">
+              <div className="bg-[#d8f2ff] p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-[#cbe7f5] transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">engineering</span>
-                <span className="font-headline font-bold text-on-surface/60 group-hover:text-primary tracking-tight">Apex Contractors</span>
+                <span className="font-headline font-bold text-on-surface tracking-tight text-center">Apex Contractors</span>
               </div>
             </div>
           </div>
