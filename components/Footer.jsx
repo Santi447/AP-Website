@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f3faff] dark:bg-slate-950">
+    <footer className="bg-[#f3faff]">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-8 py-16">
         <div className="space-y-6">
           <div className="text-lg font-bold text-[#4c616c] font-['Work_Sans'] uppercase tracking-[0.2em]">
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-[#e6f6ff] dark:bg-slate-900 py-8">
+      <div className="bg-[#e6f6ff] py-8">
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-['Work_Sans'] text-sm uppercase tracking-widest text-[#4c616c]">
               © 2024 A&P Construction Service. Calgary-based, serving Alberta.

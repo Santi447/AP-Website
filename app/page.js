@@ -188,7 +188,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-on-background"></div>
+        <div className="absolute inset-0 bg-[#021f29]"></div>
         <div className="absolute inset-0 concrete-texture"></div>
         <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/10 -skew-x-12 transform translate-x-20"></div>
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
