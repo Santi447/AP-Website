@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
+
 export default function Footer() {
   return (
     <footer className="bg-[#f3faff]">
@@ -17,14 +18,19 @@ export default function Footer() {
               <span className="material-symbols-outlined">share</span>
             </Link>
           </div>
+          <div className="flex gap-4">
+            <Link href="#" className="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+              <span className="material-symbols-outlined">share</span>
+            </Link>
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-8">
           <div>
             <h4 className="font-['Work_Sans'] text-sm uppercase tracking-widest font-bold text-[#a43700] mb-6">Services</h4>
             <ul className="space-y-4">
-              <li><Link href="/services" className="text-[#4c616c] text-sm hover:underline decoration-[#a43700] decoration-2 underline-offset-4 transition-opacity">Concrete Pumping</Link></li>
-              <li><Link href="/services" className="text-[#4c616c] text-sm hover:underline decoration-[#a43700] decoration-2 underline-offset-4 transition-opacity">Commercial</Link></li>
-              <li><Link href="/services" className="text-[#4c616c] text-sm hover:underline decoration-[#a43700] decoration-2 underline-offset-4 transition-opacity">Residential</Link></li>
+              <li><Link href="/services#commercial" className="text-[#4c616c] text-sm hover:underline decoration-[#a43700] decoration-2 underline-offset-4 transition-opacity">Commercial</Link></li>
+              <li><Link href="/services#residential" className="text-[#4c616c] text-sm hover:underline decoration-[#a43700] decoration-2 underline-offset-4 transition-opacity">Residential</Link></li>
+              <li><Link href="/services#concrete-pumping" className="text-[#4c616c] text-sm hover:underline decoration-[#a43700] decoration-2 underline-offset-4 transition-opacity">Concrete Pumping</Link></li>
             </ul>
           </div>
           <div>

@@ -204,9 +204,9 @@ export default function Home() {
                   Start Your Project Today
               </button>
             </Link>
-            <a className="flex items-center gap-3 text-white font-headline font-bold hover:text-primary transition-colors" href="tel:4030000000">
+            <a className="flex items-center gap-3 text-white font-headline font-bold hover:text-primary transition-colors" href="tel:+14034641336">
               <span className="material-symbols-outlined">call</span>
-              (403) 555-0192
+              (403) 464-1336
             </a>
           </div>
         </div>

@@ -11,8 +11,9 @@ export default function Portfolio() {
       <main className="pt-20">
         {/* Hero Section */}
         <section className="relative h-[614px] flex items-center overflow-hidden bg-surface-container-low structural-grain-before">
+          
           <div className="absolute inset-0 z-0">
-            <img alt="Construction site" className="w-full h-full object-cover opacity-20 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0W1bo9hn0J8lyka3FyFi-I9y0ZYJdZHWgQiS_WfFnqZk-P1DVpKkpooUa7gI93qDc09MDbkRWX-oillekz3rsYCTDHfTBN60nNVG90zNSckxRMUEWSHr1G2oT2bhBUPyATlAVogdXfiflMrIcx0Kr5V6cn0wogzDOLWsdoodcguvDJTZVLFBgdrBFthtG_P32XPoPajhXGD7jBDALuZL-ZscbTW5p-ekD8igzS_b7OdNSE0zIQITVP7UkRypGXh4UG-cBugB1iL2Q" />
+            <img alt="City of Calgary Skyline" className="w-full h-full object-cover opacity-20 grayscale" src="https://images.unsplash.com/photo-1629477810810-0c4159eaa575?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
           </div>
           <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
@@ -28,16 +29,24 @@ export default function Portfolio() {
           </div>
         </section>
 
+        {/* Location Indicator - Non-sticky on mobile */}
+        <section className="bg-surface md:hidden border-b border-outline-variant/10">
+          <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-center gap-2 text-secondary/60">
+            <span className="material-symbols-outlined text-lg">location_on</span>
+            <span className="font-label text-xs uppercase tracking-widest text-center">Serving Calgary & Edmonton</span>
+          </div>
+        </section>
+
         {/* Filter Controls */}
         <section className="bg-surface sticky top-20 z-40 border-b border-outline-variant/10">
-          <div className="max-w-7xl mx-auto px-6 py-6 flex flex-wrap items-center justify-between gap-4">
-            <div className="flex gap-2 p-1 bg-surface-container-low rounded-xl">
-              <button className="px-6 py-2 rounded-lg bg-surface-container-lowest text-primary font-headline font-bold shadow-sm">All Projects</button>
-              <button className="px-6 py-2 rounded-lg text-secondary hover:text-primary font-headline font-bold transition-colors">Commercial</button>
-              <button className="px-6 py-2 rounded-lg text-secondary hover:text-primary font-headline font-bold transition-colors">Residential</button>
-              <button className="px-6 py-2 rounded-lg text-secondary hover:text-primary font-headline font-bold transition-colors">Pumping Projects</button>
+          <div className="max-w-7xl mx-auto px-6 py-4 md:py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div className="flex flex-col md:flex-row gap-2 p-1 bg-surface-container-low rounded-xl w-full md:w-auto">
+              <button className="px-6 py-2 rounded-lg bg-surface-container-lowest text-primary font-headline font-bold shadow-sm w-full text-left md:text-center">All Projects</button>
+              <button className="px-6 py-2 rounded-lg text-secondary hover:text-primary font-headline font-bold transition-colors w-full text-left md:text-center">Commercial</button>
+              <button className="px-6 py-2 rounded-lg text-secondary hover:text-primary font-headline font-bold transition-colors w-full text-left md:text-center">Residential</button>
+              <button className="px-6 py-2 rounded-lg text-secondary hover:text-primary font-headline font-bold transition-colors w-full text-left md:text-center">Pumping Projects</button>
             </div>
-            <div className="flex items-center gap-2 text-secondary/60">
+            <div className="hidden md:flex items-center gap-2 text-secondary/60 w-full md:w-auto p-2 md:p-0">
               <span className="material-symbols-outlined text-lg">location_on</span>
               <span className="font-label text-sm uppercase tracking-widest">Serving Calgary & Edmonton</span>
             </div>
@@ -97,6 +106,7 @@ export default function Portfolio() {
 
             {/* Mixed Content Card */}
             <div className="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Link href="/contact">
               <div className="group cursor-pointer relative overflow-hidden rounded-xl h-full shadow-[0_12px_32px_rgba(0,0,0,0.06)] bg-surface-container-lowest p-8 flex flex-col justify-center border-l-4 border-primary hover:translate-y-[-4px]">
                 <h3 className="text-3xl font-headline font-black text-on-background mb-4">Structural Precision.</h3>
                 <p className="text-secondary mb-6 leading-relaxed">Our portfolio spans over 15 years of Alberta's infrastructure growth. Each project represents our commitment to durability and technical excellence.</p>
@@ -105,6 +115,7 @@ export default function Portfolio() {
                   <span className="material-symbols-outlined">arrow_forward</span>
                 </div>
               </div>
+              </Link>
               <div className="group cursor-pointer relative overflow-hidden rounded-xl h-[400px] shadow-[0_12px_32px_rgba(0,0,0,0.06)] hover:translate-y-[-4px]">
                 <img alt="Bridge Project" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9YQIrDymtJp2EV5xzegfTJirT8TJP24qWpo3_JLUhPLKZoQD4I6IWU2cZI0lXmQfFDCQzcuKEGWhl06vJd5tkSegGetunOUaO8k1jj-Gb8WcxKoGx80B6yF-IB8ho_bSKOdlhog8rJQp-AmTLs1Re_xwkz662s7AgwoigHH8YeutiPWtTbuJeFj0isG1B2UcEF8Oe05xFUxV7-62f3Q776R-34l-9AWe1r_2Xtkd513S0wfBuraxj_p48aUnchs5MiT0tQ3co53X5" />
                 <div className="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent"></div>
@@ -132,20 +143,20 @@ export default function Portfolio() {
                 <span className="material-symbols-outlined text-primary">verified</span>
               </div>
             </div>
-            <div className="bg-white grid grid-cols-2 md:grid-cols-4 gap-4 rounded-xl">
-              <div className="p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 rounded-xl">
+              <div className="bg-white p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">domain</span>
                 <span className="font-headline font-bold text-on-surface tracking-tight text-center">Vanguard Builders</span>
               </div>
-              <div className="p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
+              <div className="bg-white p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">architecture</span>
                 <span className="font-headline font-bold text-on-surface tracking-tight text-center">Prairie Structures</span>
               </div>
-              <div className="p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
+              <div className="bg-white p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">construction</span>
                 <span className="font-headline font-bold text-on-surface tracking-tight text-center">Summit Group</span>
               </div>
-              <div className="p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
+              <div className="bg-white p-12 flex flex-col items-center justify-center rounded-xl shadow-sm text-primary group hover:bg-on-background transition-colors">
                 <span className="material-symbols-outlined text-5xl mb-4" data-weight="fill">engineering</span>
                 <span className="font-headline font-bold text-on-surface tracking-tight text-center">Apex Contractors</span>
               </div>

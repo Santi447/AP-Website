@@ -80,21 +80,21 @@ export default function Contact() {
                 <h3 className="font-headline font-bold text-2xl mb-8 border-b-4 border-primary inline-block">Our Base</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="bg-primary-container text-on-primary-container p-3 rounded-lg">
+                    <div className="bg-primary-container text-on-primary-container p-3 rounded-lg flex-shrink-0">
                       <span className="material-symbols-outlined">call</span>
                     </div>
                     <div>
                       <p className="font-label text-xs font-bold uppercase tracking-widest text-secondary">Call Us</p>
-                      <p className="text-xl font-headline font-bold">403.464.1336</p>
+                      <p className="text-lg md:text-xl font-headline font-bold">403.464.1336</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="bg-primary-container text-on-primary-container p-3 rounded-lg">
+                    <div className="bg-primary-container text-on-primary-container p-3 rounded-lg flex-shrink-0">
                       <span className="material-symbols-outlined">mail</span>
                     </div>
                     <div>
                       <p className="font-label text-xs font-bold uppercase tracking-widest text-secondary">Email</p>
-                      <p className="text-xl font-headline font-bold">apconstructionserv@gmail.com</p>
+                      <p className="text-lg md:text-xl font-headline font-bold break-all">apconstructionserv@gmail.com</p>
                     </div>
                   </div>
                 </div>

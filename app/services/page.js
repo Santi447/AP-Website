@@ -15,7 +15,7 @@ export default function Services() {
           <div className="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-8">
               <span className="inline-block px-3 py-1 bg-secondary-container text-on-secondary-fixed-variant font-label text-xs font-bold tracking-[0.2em] uppercase mb-6 rounded-full">Established Excellence</span>
-              <h1 className="font-headline text-6xl md:text-8xl font-black text-on-surface leading-[0.9] tracking-tighter mb-8">
+              <h1 className="font-headline text-4xl sm:text-5xl lg:text-8xl font-black text-on-surface leading-[0.9] tracking-tighter mb-8">
                 CONCRETE SERVICES <br/>
                 <span className="text-primary">THAT BUILD COMMUNITIES.</span>
               </h1>
@@ -31,7 +31,7 @@ export default function Services() {
         {/* Services Grid: Asymmetric Layout */}
         <section className="max-w-7xl mx-auto px-6 py-24 space-y-32">
           {/* 01 Commercial Concrete */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div id="commercial" className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start scroll-mt-32">
             <div className="lg:col-span-5 order-2 lg:order-1">
               <div className="relative group">
                 <div className="absolute -inset-4 bg-surface-container-high rounded-xl -z-10 transition-transform group-hover:scale-105"></div>
@@ -43,7 +43,7 @@ export default function Services() {
                 <span className="font-headline text-5xl font-black text-outline-variant/30">01</span>
                 <div className="h-px flex-1 bg-outline-variant/20"></div>
               </div>
-              <h2 className="font-headline text-5xl font-bold text-on-background mb-8 leading-tight">Commercial <br/>Concrete Solutions</h2>
+              <h2 className="font-headline text-4xl lg:text-5xl font-bold text-on-background mb-8 leading-tight">Commercial <br/>Concrete Solutions</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <h3 className="font-headline text-xl font-bold text-primary flex items-center gap-2">
@@ -68,13 +68,13 @@ export default function Services() {
           </div>
 
           {/* 02 Residential Concrete */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div id="residential" className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center scroll-mt-32">
             <div className="lg:col-span-7">
               <div className="flex items-center gap-4 mb-6">
                 <span className="font-headline text-5xl font-black text-outline-variant/30">02</span>
                 <div className="h-px flex-1 bg-outline-variant/20"></div>
               </div>
-              <h2 className="font-headline text-5xl font-bold text-on-background mb-8 leading-tight text-right lg:text-left">Residential <br/>Craftsmanship</h2>
+              <h2 className="font-headline text-4xl lg:text-5xl font-bold text-on-background mb-8 leading-tight text-right lg:text-left">Residential <br/>Craftsmanship</h2>
               <div className="space-y-8">
                 <div className="flex gap-6 items-start">
                   <div className="w-12 h-12 flex-shrink-0 bg-secondary-container rounded flex items-center justify-center">
@@ -103,7 +103,7 @@ export default function Services() {
           </div>
 
           {/* 03 Specialized Pumping */}
-          <div className="bg-surface-container-highest p-12 lg:p-20 relative overflow-hidden group">
+          <div id="concrete-pumping" className="bg-surface-container-highest p-12 lg:p-20 relative overflow-hidden group scroll-mt-32">
             <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/10 -skew-x-12 translate-x-12"></div>
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
@@ -111,7 +111,7 @@ export default function Services() {
                   <span className="font-headline text-5xl font-black text-on-surface-variant/20">03</span>
                   <span className="font-label text-xs font-bold tracking-[0.3em] uppercase text-primary">Specialized Service</span>
                 </div>
-                <h2 className="font-headline text-5xl font-bold text-on-background mb-6 leading-tight">Professional Concrete Pumping</h2>
+                <h2 className="font-headline text-4xl lg:text-5xl font-bold text-on-background mb-6 leading-tight">Professional Concrete Pumping</h2>
                 <p className="text-on-surface-variant text-lg mb-8 leading-relaxed">
                   Difficult reach? Remote location? Our specialized pumping fleet navigates tight urban sites and long-distance reaches where traditional trucks can't go. We ensure consistent flow for perfect pours every time.
                 </p>
