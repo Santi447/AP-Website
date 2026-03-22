@@ -97,7 +97,7 @@ export default function Portfolio() {
 
             {/* Mixed Content Card */}
             <div className="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="group cursor-pointer relative overflow-hidden rounded-xl h-full shadow-[0_12px_32px_rgba(0,0,0,0.06)] bg-surface-container-lowest p-8 flex flex-col justify-center border-l-4 border-primary">
+              <div className="group cursor-pointer relative overflow-hidden rounded-xl h-full shadow-[0_12px_32px_rgba(0,0,0,0.06)] bg-surface-container-lowest p-8 flex flex-col justify-center border-l-4 border-primary hover:translate-y-[-4px]">
                 <h3 className="text-3xl font-headline font-black text-on-background mb-4">Structural Precision.</h3>
                 <p className="text-secondary mb-6 leading-relaxed">Our portfolio spans over 15 years of Alberta's infrastructure growth. Each project represents our commitment to durability and technical excellence.</p>
                 <div className="flex items-center gap-2 text-primary font-headline font-bold">
@@ -105,7 +105,7 @@ export default function Portfolio() {
                   <span className="material-symbols-outlined">arrow_forward</span>
                 </div>
               </div>
-              <div className="group cursor-pointer relative overflow-hidden rounded-xl h-[400px] shadow-[0_12px_32px_rgba(0,0,0,0.06)]">
+              <div className="group cursor-pointer relative overflow-hidden rounded-xl h-[400px] shadow-[0_12px_32px_rgba(0,0,0,0.06)] hover:translate-y-[-4px]">
                 <img alt="Bridge Project" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9YQIrDymtJp2EV5xzegfTJirT8TJP24qWpo3_JLUhPLKZoQD4I6IWU2cZI0lXmQfFDCQzcuKEGWhl06vJd5tkSegGetunOUaO8k1jj-Gb8WcxKoGx80B6yF-IB8ho_bSKOdlhog8rJQp-AmTLs1Re_xwkz662s7AgwoigHH8YeutiPWtTbuJeFj0isG1B2UcEF8Oe05xFUxV7-62f3Q776R-34l-9AWe1r_2Xtkd513S0wfBuraxj_p48aUnchs5MiT0tQ3co53X5" />
                 <div className="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8 text-on-tertiary-container">
