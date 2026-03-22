@@ -1,14 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#f3faff]/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-[#e3bfb2]/15 shadow-[0_12px_32px_rgba(0,0,0,0.06)]">
-      <div className="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+    <nav className="fixed top-0 w-full z-50 bg-[#f3faff]/80  backdrop-blur-md border-b border-[#e3bfb2]/15 shadow-[0_12px_32px_rgba(0,0,0,0.06)]">
+      <div className="flex justify-around items-center max-w-7xl mx-auto px-6 h-20">
         <Link href="/">
-          <div className="text-2xl font-black text-[#a43700] dark:text-[#ff8a50] tracking-tighter font-['Space_Grotesk']">
-            A&P Construction
-          </div>
+          <Image src="/A&P-Logo.png" alt="A&P Construction" width={175} height={100} />
         </Link>
         <div className="hidden md:flex items-center space-x-8 font-['Space_Grotesk'] font-bold tracking-tight">
           <Link href="/" className="text-[#a43700] border-b-2 border-[#a43700] pb-1">Home</Link>

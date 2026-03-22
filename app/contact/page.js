@@ -85,7 +85,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-label text-xs font-bold uppercase tracking-widest text-secondary">Call Us</p>
-                      <p className="text-xl font-headline font-bold">403.555.0123</p>
+                      <p className="text-xl font-headline font-bold">403.464.1336</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -94,7 +94,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-label text-xs font-bold uppercase tracking-widest text-secondary">Email</p>
-                      <p className="text-xl font-headline font-bold">quotes@apconstruction.ca</p>
+                      <p className="text-xl font-headline font-bold">apconstructionserv@gmail.com</p>
                     </div>
                   </div>
                 </div>

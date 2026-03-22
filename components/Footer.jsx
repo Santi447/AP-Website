@@ -38,11 +38,11 @@ export default function Footer() {
         </div>
         <div className="bg-surface-container-low p-8 rounded-xl border border-outline-variant/10">
           <h4 className="font-headline font-bold text-on-surface mb-4">Alberta Headquarters</h4>
-          <p className="text-secondary text-sm mb-2">123 Industrial Way SE</p>
-          <p className="text-secondary text-sm mb-6">Calgary, AB T2P 2M5</p>
+          <p className="text-secondary text-sm mb-2">320 Marquis Hts SE</p>
+          <p className="text-secondary text-sm mb-6">Calgary, AB T3M 2A7</p>
           <div className="flex items-center gap-2 text-primary font-bold">
             <span className="material-symbols-outlined text-sm">mail</span>
-            <span className="text-sm">info@apconstruction.ca</span>
+            <span className="text-sm">apconstructionserv@gmail.com</span>
           </div>
         </div>
       </div>
