@@ -1,5 +1,7 @@
 import { Space_Grotesk, Work_Sans } from "next/font/google";
 import "./globals.css";
+import { siteSettings } from "../lib/fallbackData";
+import { getSiteUrl } from "../lib/env";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -12,21 +14,23 @@ const workSans = Work_Sans({
 });
 
 export const metadata = {
-  title: "AP Construction Services",
-  description: "Structural Brutalism Web Application",
+  metadataBase: new URL(getSiteUrl()),
+  title: {
+    default: siteSettings.defaultSeoTitle,
+    template: `%s | ${siteSettings.businessName}`,
+  },
+  description: siteSettings.defaultSeoDescription,
+  openGraph: {
+    title: siteSettings.defaultSeoTitle,
+    description: siteSettings.defaultSeoDescription,
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-      </head>
-      <body
-        className={`${spaceGrotesk.variable} ${workSans.variable} font-sans antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${spaceGrotesk.variable} ${workSans.variable} font-sans antialiased`}>{children}</body>
     </html>
   );
 }
