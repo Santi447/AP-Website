@@ -92,6 +92,28 @@ export default async function ServiceDetail({ params }) {
           </section>
         ) : null}
 
+        {service.galleryImages?.length ? (
+          <section className="mx-auto max-w-7xl px-6 py-20">
+            <div className="mb-10">
+              <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-primary">Service Gallery</p>
+              <h2 className="font-headline text-4xl font-black tracking-tight">Related service photos</h2>
+            </div>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+              {service.galleryImages.map((galleryImage, index) => (
+                <div key={`${service.slug}-gallery-${index}`} className="relative h-80 overflow-hidden rounded-lg bg-surface-container-low shadow-sm">
+                  <Image
+                    src={imageSource(galleryImage)}
+                    alt={imageAlt(galleryImage, `${service.title} gallery image ${index + 1}`)}
+                    fill
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         {service.relatedProjects?.length ? (
           <section className="mx-auto max-w-7xl px-6 py-20">
             <h2 className="mb-10 font-headline text-4xl font-black">Related Projects</h2>
