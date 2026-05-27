@@ -7,6 +7,8 @@ export const siteSettingsQuery = groq`
     email,
     generalLocation,
     serviceAreaSummary,
+    logo{alt, asset->{url}},
+    footerLogo{alt, asset->{url}},
     facebookUrl,
     instagramUrl,
     googleBusinessProfileUrl,

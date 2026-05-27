@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { siteSettings } from "../lib/fallbackData";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -12,15 +13,17 @@ const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ settings = siteSettings }) {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const logoSrc = settings.logo?.asset?.url || "/A&P-Logo.png";
+  const logoAlt = settings.logo?.alt || settings.businessName || "A&P Concrete";
 
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-[#e3bfb2]/15 bg-[#f3faff]/90 shadow-[0_12px_32px_rgba(0,0,0,0.06)] backdrop-blur-md">
       <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         <Link href="/" className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
-          <Image src="/A&P-Logo.png" alt="A&P Concrete" width={175} height={100} priority />
+          <Image src={logoSrc} alt={logoAlt} width={175} height={100} priority className="h-auto max-h-16 w-auto" />
         </Link>
 
         <div className="hidden items-center space-x-8 font-headline font-bold md:flex">

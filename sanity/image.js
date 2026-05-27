@@ -12,6 +12,10 @@ export function urlFor(source) {
 }
 
 export function imageSource(image, fallbackImage) {
+  if (image?.asset?.url) {
+    return image.asset.url;
+  }
+
   if (image?.asset) {
     return urlFor(image).width(1600).height(1000).fit("crop").auto("format").url();
   }

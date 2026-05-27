@@ -18,7 +18,7 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-surface text-on-surface selection:bg-primary/30">
-      <Navbar />
+      <Navbar settings={settings} />
       <main>
         <section className="relative overflow-hidden bg-surface pt-20">
           <div className="concrete-texture absolute inset-0 pointer-events-none" />

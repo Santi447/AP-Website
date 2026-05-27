@@ -16,7 +16,7 @@ export default async function Projects() {
 
   return (
     <div className="min-h-screen bg-background text-on-background selection:bg-primary selection:text-on-primary">
-      <Navbar />
+      <Navbar settings={settings} />
       <main className="pt-20">
         <section className="relative overflow-hidden bg-surface-container-low py-24">
           <div className="structural-grain absolute inset-0 pointer-events-none" />

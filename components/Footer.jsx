@@ -1,15 +1,45 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteSettings } from "../lib/fallbackData";
+import { imageAlt, imageSource } from "../sanity/image";
 
 export default function Footer({ settings = siteSettings }) {
+  const footerLogoSrc = imageSource(settings.footerLogo || settings.logo);
+  const footerLogoAlt = imageAlt(settings.footerLogo || settings.logo, settings.businessName || "A&P Concrete");
+  const socialLinks = [
+    { href: settings.facebookUrl, label: "Facebook", shortLabel: "Fb" },
+    { href: settings.instagramUrl, label: "Instagram", shortLabel: "Ig" },
+    { href: settings.googleBusinessProfileUrl, label: "Google Business Profile", shortLabel: "G" },
+  ].filter((link) => Boolean(link.href));
+
   return (
     <footer className="bg-[#f3faff]">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-8 py-16 md:grid-cols-3">
         <div className="space-y-6">
-          <div className="font-body text-lg font-bold uppercase tracking-[0.2em] text-secondary">{settings.businessName}</div>
+          {footerLogoSrc ? (
+            <Image src={footerLogoSrc} alt={footerLogoAlt} width={180} height={100} className="h-auto max-h-20 w-auto" />
+          ) : (
+            <div className="font-body text-lg font-bold uppercase tracking-[0.2em] text-secondary">{settings.businessName}</div>
+          )}
           <p className="max-w-xs text-sm leading-relaxed text-secondary">
             Concrete pumping, placing, finishing, prep work, and crew support for residential, commercial, and industrial projects.
           </p>
+          {socialLinks.length ? (
+            <div className="flex gap-3">
+              {socialLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  aria-label={link.label}
+                  className="flex h-10 w-10 items-center justify-center rounded bg-surface-container font-headline text-xs font-black uppercase text-primary transition-colors hover:bg-primary hover:text-white"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {link.shortLabel}
+                </Link>
+              ))}
+            </div>
+          ) : null}
         </div>
 
         <div className="grid grid-cols-2 gap-8">

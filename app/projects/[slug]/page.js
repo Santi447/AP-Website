@@ -43,7 +43,7 @@ export default async function ProjectDetail({ params }) {
 
   return (
     <div className="min-h-screen bg-background text-on-background">
-      <Navbar />
+      <Navbar settings={settings} />
       <main className="pt-20">
         <section className="grid grid-cols-1 bg-surface-container-low lg:grid-cols-2">
           <div className="px-6 py-20 md:px-12 lg:px-20">

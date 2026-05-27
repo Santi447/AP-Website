@@ -15,7 +15,7 @@ export default async function Contact() {
 
   return (
     <div className="min-h-screen bg-background text-on-background selection:bg-primary selection:text-on-primary">
-      <Navbar />
+      <Navbar settings={settings} />
       <main className="relative overflow-hidden pb-24 pt-32">
         <div className="grain-overlay absolute inset-0 z-0" />
         <div className="relative z-10 mx-auto max-w-7xl px-6">
